@@ -1,0 +1,35 @@
+{
+  "name": "neeravi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ajna/pagination": "^1.4.19",
+    "@ark-ui/react": "^4.9.2",
+    "@chakra-ui/react": "^2.10.6",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "ark-ui": "^0.0.4",
+    "axios": "^1.8.1",
+    "chakra": "^0.0.3",
+    "framer-motion": "^12.4.7",
+    "next-themes": "^0.4.4",
+    "pagination": "^0.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-paginate": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}
