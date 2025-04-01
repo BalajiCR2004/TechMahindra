@@ -1,0 +1,106 @@
+/* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style form headings */
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Label styling */
+  label {
+    font-weight: 600;
+    margin-top: 12px;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Style inputs and textarea */
+  input, textarea {
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Prevents input from overflowing */
+  }
+  
+  /* Improve focus effect */
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Align text inputs properly */
+  input {
+    height: 45px;
+  }
+  
+  /* Adjust textarea size */
+  textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  /* Style submit button */
+  button {
+    margin-top: 20px;
+    padding: 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+    transform: scale(1.03);
+  }
+  
+  /* Style user reviews section */
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Review list styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  }
+  
+  li strong {
+    display: block;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  

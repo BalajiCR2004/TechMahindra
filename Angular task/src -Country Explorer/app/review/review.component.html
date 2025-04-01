@@ -1,0 +1,17 @@
+<h2>📝 Submit a Review</h2>
+
+<form [formGroup]="reviewForm" (ngSubmit)="submitReview()">
+  <label>Name:</label>
+  <input type="text" formControlName="name" required>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email" required>
+
+  <label>Rating (1-5):</label>
+  <input type="number" formControlName="rating" min="1" max="5" required>
+
+  <label>Review:</label>
+  <textarea formControlName="review" required></textarea>
+
+  <button type="submit">Submit Review</button>
+</form>

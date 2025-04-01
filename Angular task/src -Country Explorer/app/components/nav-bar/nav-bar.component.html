@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <h1>🌍 Country Explorer</h1>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/countries-limited">Countries List</a></li>
+    <li *ngIf="isLoggedIn()"><a routerLink="/countries">Full Countries List</a></li>
+    <li *ngIf="isLoggedIn()"><a routerLink="/review">Review</a></li> <!-- ✅ Added Review Option -->
+    <li *ngIf="!isLoggedIn()"><a routerLink="/login">Login</a></li>
+    <li *ngIf="!isLoggedIn()"><a routerLink="/signup">Sign Up</a></li>
+    <li *ngIf="isLoggedIn()"><a (click)="logout()">Logout</a></li>
+  </ul>
+</nav>

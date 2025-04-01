@@ -1,0 +1,58 @@
+/* 🌍 Country Detail Container */
+.country-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* 🏳️ Country Flag */
+.country-detail img {
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+/* 📝 Country Info */
+.country-detail p {
+  font-size: 18px;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* 🌟 Country Name */
+.country-detail h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* 🔙 Back Button */
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* 🕐 Loading Message */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}

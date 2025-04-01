@@ -1,0 +1,67 @@
+/* Center the sign-up form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Headings */
+  h2 {
+    text-align: center;
+    color: #222;
+    font-size: 24px;
+  }
+  
+  /* Labels */
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Focus effect for input */
+  input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  }
+  
+  /* Submit button */
+  button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    form {
+      width: 90%;
+    }
+  }
+  

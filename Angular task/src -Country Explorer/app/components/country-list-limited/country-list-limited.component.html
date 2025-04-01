@@ -1,0 +1,24 @@
+<h2>🌍 Country List</h2>
+
+<!-- ✅ Search Input -->
+<input type="text" [(ngModel)]="searchText" placeholder=" Search for a country..." class="search-box">
+
+<!-- ✅ Show country list if no country is selected -->
+<div *ngIf="!selectedCountry">
+  <p *ngIf="displayedCountries.length === 0">Loading countries...</p>
+  <div class="grid">
+    <div *ngFor="let country of (countries | search:searchText)?.slice(0, 20)" 
+         class="country-card" 
+         (click)="viewCountryDetails(country)">
+      <h3>{{ country.name.common }}</h3>
+      <img [src]="country.flags.png" [alt]="country.name.common" width="100">
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Show country details when a country is selected -->
+<app-country-detail 
+  *ngIf="selectedCountry" 
+  [country]="selectedCountry" 
+  (back)="goBack()">
+</app-country-detail>
